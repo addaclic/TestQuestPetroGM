@@ -1,7 +1,7 @@
 #ifndef TESTQUEST_H_
 #define TESTQUEST_H_
 
-#include <iostream>
+#include <string>
 
 class Figure {
  public:
@@ -12,14 +12,15 @@ class Figure {
   int y() const { return y_; }
 
  private:
+  std::string name_;
   int x_;
   int y_;
-  std::string name_;
 };
 
 #endif  // TESTQUEST_H_
 
 /*
+Чтение файла:
 Проверка координат фигуры
 Проверка на совпадение координат фигуры
 Задать список set координат

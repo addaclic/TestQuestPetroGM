@@ -4,3 +4,6 @@ CC = g++
 
 build:
 	$(CC) $(FLAGS) $(PROJECT_NAME).cc -o $(PROJECT_NAME)
+	
+clean:
+	rm $(PROJECT_NAME)
