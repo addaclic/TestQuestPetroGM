@@ -157,15 +157,8 @@ class Knight : public Figure {
 
 // class Shadow : public Figure {
 //  public:
-//   Shadow(int x, int y) : x_(x), y_(y) {}
-//   // virtual bool figureAttack(const Figure& other) const { return false; };
-//   virtual int x() const { return x_; };
-//   virtual int y() const { return y_; };
+//  Shadow(const std::string name, int x, int y) : Figure(name, x, y){};
 
-//  private:
-//   const std::string name_ = "Shadow";
-//   int x_ = -1;
-//   int y_ = -1;
 // };
 
 class ChessField {
@@ -246,15 +239,3 @@ class ChessField {
 };
 
 #endif  // TESTQUEST_H_
-
-/*
-Чтение файла:
-Проверка координат фигуры
-Проверка на совпадение координат фигуры
-Задать список set координат
-
-Наследование Queen от Rook и Bishop
-Наследование King от Queen с ограничением на расстояние
-Наследование Rook, Bishop и Knight от Figure
-Наследование Shadow от Queen
-*/
