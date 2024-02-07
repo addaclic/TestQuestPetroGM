@@ -1,0 +1,11 @@
+king 0 0
+bishop 0 1
+queen 3 4
+knight 0 3
+rook 1 3
+bishop 3 7
+knight  5 5
+queen 6 3
+king 7 7
+rook 6 6
+knight 4 1

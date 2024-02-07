@@ -4,10 +4,18 @@ CC = g++
 
 build:
 	@$(CC) $(FLAGS) $(PROJECT_NAME).cc -o $(PROJECT_NAME)
-	@./$(PROJECT_NAME) < $(PROJECT_NAME).txt
+
+test: build
+	@./$(PROJECT_NAME) < TestsCase/$(PROJECT_NAME)01.txt
+	@./$(PROJECT_NAME) < TestsCase/$(PROJECT_NAME)05.txt
+	@./$(PROJECT_NAME) < TestsCase/$(PROJECT_NAME)06.txt
+
+test_error1:
+	@./$(PROJECT_NAME) < TestsCase/$(PROJECT_NAME)02.txt
+test_error2:
+	@./$(PROJECT_NAME) < TestsCase/$(PROJECT_NAME)03.txt
+test_error3:
+	@./$(PROJECT_NAME) < TestsCase/$(PROJECT_NAME)04.txt
 	
 clean:
 	rm $(PROJECT_NAME)
-
-my:
-	$(CC) $(FLAGS) .vscode/game.cpp -o $(PROJECT_NAME)

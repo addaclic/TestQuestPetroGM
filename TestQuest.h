@@ -9,12 +9,7 @@
 #include "Figure/classKnight.h"
 #include "Figure/classQueen.h"
 #include "Figure/classRook.h"
-
-// class Shadow : public Figure {
-//  public:
-//  Shadow(const std::string name, int x, int y) : Figure(name, x, y){};
-
-// };
+// #include "Figure/classShadow.h"
 
 class ChessField {
  public:
@@ -41,7 +36,8 @@ class ChessField {
   void PlaceFigure() {
     int x, y;
     std::string name;
-    for (int i = 0; !std::cin.eof(); ++i) {
+    int i = 0;
+    while (!std::cin.eof()) {
       if (i == 10)
         throw std::invalid_argument("Too many figures");
       else {
@@ -61,8 +57,17 @@ class ChessField {
           }
         }
       }
+      ++i;
     }
+    if (i < 2) throw std::invalid_argument("Need place more figure");
   };
+
+  // void CheckShadow() {
+  //   for (int y = 0; y < 8; ++y) {
+  //     for (int x = 0; x < 8; ++x) {
+  //     }
+  //   }
+  // };
 
   void CheckAttack() {
     for (int y = 0; y < 8; ++y) {

@@ -45,8 +45,8 @@ class Figure {
       i -= x();
       j -= x();
     } else {
-      j -= y();
       i -= y();
+      j -= y();
     }
     char figure = 0;
     for (; i < 8 && j < 8; ++i, ++j) {
@@ -62,10 +62,10 @@ class Figure {
       }
     }
     i = x(), j = y();
-    while (i < 8 && j > -1) {
+    while (i != 7 && j != 0) {
       ++i, --j;
     }
-    for (; i > -1 && j < 8; --i, ++j) {
+    while (i != -1 && j != 8) {
       if (other[i][j] != 'O' && other[i][j] != '#' && i != x() && j != y())
         figure = other[i][j];
       if (figure && i == x() && j == y()) {
@@ -75,6 +75,7 @@ class Figure {
         std::cout << figure << " ";
         break;
       }
+      --i, ++j;
     }
   };
 
