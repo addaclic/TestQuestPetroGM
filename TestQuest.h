@@ -4,12 +4,12 @@
 #include <iostream>
 #include <string>
 
-#include "Figure/classBishop.h"
-#include "Figure/classKing.h"
-#include "Figure/classKnight.h"
-#include "Figure/classQueen.h"
-#include "Figure/classRook.h"
-// #include "Figure/classShadow.h"
+#include "Figure/Bishop.h"
+#include "Figure/King.h"
+#include "Figure/Knight.h"
+#include "Figure/Queen.h"
+#include "Figure/Rook.h"
+// #include "Figure/Shadow.h"
 
 class ChessField {
  public:

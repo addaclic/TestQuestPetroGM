@@ -1,7 +1,7 @@
 #ifndef FIGURE_CLASSSHADOW_H
 #define FIGURE_CLASSSHADOW_H
 
-#include "classFigure.h"
+#include "Figure.h"
 
 class Shadow : public Figure {
  public:

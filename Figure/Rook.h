@@ -1,7 +1,7 @@
 #ifndef FIGURE_CLASSROOK_H
 #define FIGURE_CLASSROOK_H
 
-#include "classFigure.h"
+#include "Figure.h"
 
 class Rook : public Figure {
  public:

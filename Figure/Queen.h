@@ -1,7 +1,7 @@
 #ifndef FIGURE_CLASSQUEEN_H
 #define FIGURE_CLASSQUEEN_H
 
-#include "classFigure.h"
+#include "Figure.h"
 
 class Queen : public Figure {
  public:

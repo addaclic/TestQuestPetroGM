@@ -1,7 +1,7 @@
 #ifndef FIGURE_CLASSKING_H
 #define FIGURE_CLASSKING_H
 
-#include "classFigure.h"
+#include "Figure.h"
 
 class King : public Figure {
  public:

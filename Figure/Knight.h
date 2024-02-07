@@ -1,7 +1,7 @@
 #ifndef FIGURE_CLASSKNIGHT_H
 #define FIGURE_CLASSKNIGHT_H
 
-#include "classFigure.h"
+#include "Figure.h"
 
 class Knight : public Figure {
  public:

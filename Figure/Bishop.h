@@ -1,7 +1,7 @@
 #ifndef FIGURE_CLASSBISHOP_H
 #define FIGURE_CLASSBISHOP_H
 
-#include "classFigure.h"
+#include "Figure.h"
 
 class Bishop : public Figure {
  public:

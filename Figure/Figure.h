@@ -12,6 +12,7 @@ class Figure {
   int x() const { return x_; };
   int y() const { return y_; };
 
+ protected:
   void Attackstraight(const char other[8][8]) const {
     char figure = 0;
     for (int i = 0; i < 8; ++i) {
